@@ -1,0 +1,663 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Header */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar1{
+    display: flex;
+    align-items: center;
+    background-color: #FFFFFF;
+    height: 55px;
+}
+.img1{
+    background-image: url(microsoft1.png);
+    background-size: cover;
+    height: 23px;
+    width: 110px;
+    margin-left: 45px;
+}
+.navbar1 a{
+    text-decoration: none;
+    color: #262626;
+    font-size: 13px;
+    margin-left: 27px;
+}
+.navbar1 a:hover{
+    text-decoration: 2px solid underline;
+}
+
+
+.navbar{
+    margin-right: 100px;
+}
+.navbar a{
+    float: left;
+    font-size: 13px;
+    color: #262626;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.d{
+    float: left;
+    overflow: hidden;
+}
+.d-button{
+    font-size: 13px;
+    border: none;
+    outline: none;
+    color: #000000;
+    padding: 14px 16px;
+    background: inherit;
+}
+.d-button:hover{
+    text-decoration: 2px  solid underline;
+    background-color: #F2F2F2;
+}
+.d-content{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    justify-content: center;
+    left: 0;
+    z-index: 10;
+    margin-left: 73px;
+    width: 90%;
+    
+}
+.d:hover .d-content{
+    display: block;
+}
+
+.column{
+    float: left;
+    padding: 21.3px;
+    background-color: #F2F2F2;
+    height: 420px;
+}
+.column a{
+    display: block;
+    float: none;
+    color: #262626;
+    text-align: left;
+    font-size: 13px;
+}
+.column a:hover{
+    text-decoration: underline;
+}
+.column h3{
+    color: #000000;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.column a:hover{
+    -ms-text-combine-horizontal: #fff;
+}
+.row{
+    display: block;
+    justify-content: center;
+    background-color: #E6E6E6;
+    
+}
+.panel2 a{
+    margin-left: 550px;
+    font-size: 13px
+}
+.panel2 a:hover{
+    text-decoration: underline;
+}
+#nav-icon{
+    height: 35px;
+    width: 35px;
+    border: 1px solid grey;
+    border-radius: 50%;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    padding-left: 8px;
+}
+
+.row::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+@media(max-width: 650px){
+    .column{
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+/* hero-section */
+
+.img2{
+    position: relative;
+}
+.img2 img{
+    width: 100%;
+    height: auto;
+}
+.img2-text{
+    position: absolute;
+    top: 30%;
+    color: #000000;
+    padding-left: 120px;
+}
+.img2-text h1{
+    font-weight: 600;
+    font-size: 29px;
+}
+.img2-text p{
+    margin-top: 20px;
+    width: 400px;
+    font-size: 16px;
+    line-height: 24px;
+}
+.img2-text button{
+    height: 40px;
+    background-color: #0067B8;
+    color: #FFFFFF;
+    width: 220px;
+    border: none;
+    margin-top: 20px;
+    border-radius: 2px 2px 2px 2px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.img2-text button:hover{
+    background-color: rgb(18, 94, 151);
+}
+
+/* Image */
+
+.img3{
+    position: relative;
+}
+.img3 img{
+    width: 100%;
+    height: auto;
+}
+.img3-text{
+    position: absolute;
+    top: 30%;
+    color: #000000;
+    padding-left: 120px;
+}
+.img3-text h1{
+    font-weight: 600;
+    font-size: 29px;
+}
+.img3-text p{
+    margin-top: 20px;
+    width: 400px;
+    font-size: 16px;
+    line-height: 24px;
+}
+.img3-text button{
+    height: 40px;
+    background-color: #0067B8;
+    color: #FFFFFF;
+    width: 170px;
+    border: none;
+    margin-top: 20px;
+    border-radius: 2px 2px 2px 2px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.img3-text button:hover{
+    background-color: rgb(18, 94, 151);
+}
+
+/* Slider */
+
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.slider {
+    display: flex;
+    width: 200%;
+    transition: transform 1s ease-in-out;
+}
+.slider img {
+    width: 100vw;
+    flex-shrink: 0;
+    height: 500px;
+}
+
+.slider-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+.slider-buttons button {
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 22px;
+    background-color: white;
+}
+
+/* Content */
+
+.panel3{
+    display: flex;
+    margin-top: 100px;
+}
+.panel3 a{
+    text-decoration: none;
+    color: #000000;
+}
+/* CARD1 */
+.card{
+    width: 300px;
+    height: 470px;
+    background-color: #FFFFFF;
+    box-shadow: 0.5px 0.5px 4px grey;
+    margin-left: 25px;
+}
+
+.card h2{
+    width: 250px;
+    padding-left: 25px;
+    font-weight: 600;
+    margin-top: 20px;
+    font-size: 23px;
+}
+.card p{
+    width: 250px;
+    padding-left: 25px;
+    margin-top: 15px;
+    font-size: 16px;
+}
+.card button{
+    height: 40px;
+    background-color: #0067B8;
+    color: #FFFFFF;
+    width: 170px;
+    border: none;
+    margin-top: 18px;
+    border-radius: 2px 2px 2px 2px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 25px;
+}
+.card button:hover{
+    background-color: rgb(18, 94, 151);
+}
+.card1{
+    margin-left: 40px;
+}
+.card1 button{
+    width: 189px;
+}
+.card2 button{
+    margin-top: 100px;
+    width: 137px;
+}
+.card3 button{
+    margin-top: 120px;
+    width: 110px;
+}
+.card4 button{
+    margin-top: 110px;
+    width: 137px;
+}
+.img4{
+    background-image: url(microsoft4.webp);
+    background-size: cover;
+    height: 150px;
+    width: 100%;
+}
+.img5{
+    background-image: url(microsoft5.webp);
+    background-size: cover;
+    height: 150px;
+    width: 100%;
+}
+.img6{
+    background-image: url(microsoft6.png);
+    background-size: cover;
+    height: 150px;
+    width: 100%;
+}
+.img7{
+    background-image: url(microsoft7.webp);
+    background-size: cover;
+    height: 150px;
+    width: 100%;
+}
+
+/* PANEL 4 */
+
+.img8{
+    position: relative;
+    margin-top: 100px;
+}
+
+.img8 img{
+    width: 90%;
+    height: auto;
+    margin-left: 70px;
+}
+.img8-text{
+    position: absolute;
+    top: 40%;
+    color: #FFFFFF;
+    padding-left: 800px;
+}
+.img8-text h1{
+    font-weight: 600;
+    font-size: 29px;
+}
+.img8-text p{
+    margin-top: 20px;
+    width: 400px;
+    font-size: 16px;
+    line-height: 24px;
+    width: 300px;
+}
+.img8-text button{
+    height: 40px;
+    background-color: #0067B8;
+    color: #FFFFFF;
+    width: 110px;
+    border: none;
+    margin-top: 20px;
+    border-radius: 2px 2px 2px 2px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.img8-text button:hover{
+    background-color: rgb(18, 94, 151);
+}
+
+/* PANEL 5 */
+
+.panel5{
+    margin-top: 100px;
+    
+}
+.panel5 h2{
+    margin-left: 70px;
+    font-size: 30px;
+    font-weight: 600;
+}
+.panel5-content{
+    display: flex;
+}
+
+.panel5 a{
+    text-decoration: none;
+    color: #000000;
+}
+/* CARD1 */
+.cards{
+    width: 285px;
+    height: 440px;
+    background-color: #FFFFFF;
+    box-shadow: 0.5px 0.5px 3px grey;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+
+.cards h3{
+    width: 270px;
+    padding-left: 25px;
+    font-weight: 600;
+    margin-top: 20px;
+    font-size: 23px;
+}
+.cards p{
+    width: 250px;
+    padding-left: 25px;
+    margin-top: 15px;
+    font-size: 16px;
+}
+.cards button{
+    height: 40px;
+    background-color: #0067B8;
+    color: #FFFFFF;
+    width: 170px;
+    border: none;
+    margin-top: 18px;
+    border-radius: 2px 2px 2px 2px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 25px;
+}
+.cards button:hover{
+    background-color: rgb(18, 94, 151);
+}
+.card5{
+    margin-left: 70px;
+}
+.card5 button{
+    width: 110px;
+    margin-top: 85px;
+}
+.card6 button{
+    margin-top: 35px;
+    width: 230px;
+    height: 60px;
+}
+.card7 button{
+    margin-top: 55px;
+    width: 113px;
+}
+.card8 button{
+    margin-top: 25px;
+    width: 230px;
+    height: 40px;
+    
+}
+
+.img9{
+    background-image: url(microsoft9.webp);
+    background-size: cover;
+    height: 160px;
+    width: 100%;
+}
+.img10{
+    background-image: url(microsoft10.webp);
+    background-size: cover;
+    height: 160px;
+    width: 100%;
+}
+.img11{
+    background-image: url(microsoft11.webp);
+    background-size: cover;
+    height: 160px;
+    width: 100%;
+}
+.img12{
+    background-image: url(microsoft12.png);
+    background-size: cover;
+    height: 160px;
+    width: 100%;
+}
+
+/* PANEL 6 */
+
+.panel6{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 80px;
+}
+.panel6 h4{
+    font-weight: 400;
+    font-size: 18px;
+}
+.img13{
+    background-image: url(microsoft13.webp);
+    background-size: cover;
+    height: 30px;
+    width: 30px;
+    margin-left: 20px;
+}
+.img14{
+    background-image: url(microsoft14.webp);
+    background-size: cover;
+    height: 30px;
+    width: 30px;
+    margin-left: 15px;
+}
+.img15{
+    background-image: url(microsoft15.webp);
+    background-size: cover;
+    height: 30px;
+    width: 30px;
+    margin-left: 15px;
+}
+
+.panel7 button{
+    height: 40px;
+    width: 143px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #d8d5d5;
+    border: none;
+    position: relative;
+    left: 1197px;
+    padding-right: 5px;
+}
+.panel7 button:hover{
+    background-color: #FFFFFF;
+    box-shadow: 0.5px 0.5px 3px grey;
+}
+#panel7-icon{
+    padding-right: 15px;
+}
+
+/* Footer */
+
+footer{
+    margin-top: 60px;
+}
+.foot-panel2{
+    background-color: #F2F2F2;
+    color: white;
+    height: auto;
+    display: flex;
+}
+ul p{
+    margin-top: 40px;
+    font-weight: 500;
+    color: #616161;
+    font-size: 15px;
+    margin-left: 70px;
+}
+ul a{
+    display: block;
+    margin-top: 15px;
+    font-size: 11px;
+    color: #616161;
+    text-decoration: none;
+    margin-left: 70px;
+}
+ul a:hover{
+    text-decoration: underline;
+}
+.foot-panel3{
+    height: 90px;
+    background-color: #F2F2F2;
+    color: white;
+    display: flex;
+    align-items: start;
+    padding-top: 45px;
+}
+.foot-panel3 a{
+    color: #616161;
+    font-size: 11px;
+    text-decoration: none;
+    margin-left: 20px;
+}
+.foot-panel3 a:hover{
+    text-decoration: underline;
+}
+
+#foot-panel3-icon{
+    padding-right: 5px;
+    font-size: 20px;
+    margin-left: 50px;
+}
+.foot-panel3-row2{
+    display: flex;
+    align-items: end;
+    margin-left: 270px;
+}
+
+.foot-panel3-row2 p{
+    color: #616161;
+    font-size: 11px;
+    margin-left: 30px;
+}
+
+@media(max-width: 650px){
+    .hero-section{
+        width: 100%;
+        height: auto;
+    }
+}
+@media(max-width: 650px){
+    .panel3{
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap;
+    }
+    .card{
+        margin-top: 20px;
+        margin-left: 50px;
+    }
+}
+@media(max-width: 650px){
+    .panel5-content{
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap;
+    }
+    .cards{
+        margin-top: 20px;
+        margin-left: 50px;
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media(max-width: 650px){
+    .foot-panel2{
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap;
+    }
+    
+}
+@media(max-width: 650px){
+    .foot-panel3-row1{
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap;
+    }
+    .foot-panel3-row2{
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap;
+        display: block;
+    }
+}
